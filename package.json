@@ -1,0 +1,42 @@
+{
+	"name": "crashed-ws-proxy",
+	"version": "1.0.0",
+	"description": "WebSocket proxy for crashed game data",
+	"main": "dist/server.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/server.js",
+		"dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+		"lint": "eslint . --ext .ts",
+		"test": "echo \"No tests specified\" && exit 0"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"keywords": [
+		"websocket",
+		"proxy",
+		"typescript"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.0",
+		"@types/http-proxy-middleware": "^0.19.3",
+		"@types/node": "^22.13.10",
+		"@types/winston": "^2.4.4",
+		"@typescript-eslint/eslint-plugin": "^8.26.1",
+		"@typescript-eslint/parser": "^8.26.1",
+		"eslint": "^9.22.0",
+		"nodemon": "^3.1.9",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.2"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.21.2",
+		"http-proxy-middleware": "^3.0.3",
+		"winston": "^3.17.0"
+	}
+}
